@@ -2,6 +2,7 @@ rng('shuffle');
 
 %% 
 pathname_task3 = pwd;
+pathname_task3 = [pathname_task3, sep];
 
 %% figure 5c/6a/6c
 disp('Simulation');
@@ -9,7 +10,7 @@ disp('data for 5c/6ac.');
 nSimu = 20;
 varyPara = [];
 varyPara_num = [];
-filename_5c = {[pathname_task3,'\value_based.mat']};
+filename_5c = {[pathname_task3,'value_based.mat']};
 value_based_task(nSimu,varyPara,varyPara_num,filename_5c);
 
 %% figure S6a
@@ -17,21 +18,21 @@ disp('S6 a.');
 nSimu = 10;
 varyPara = 'network.gain_inpOV_rec';
 varyPara_num = 2;
-filename_S6a = {[pathname_task3,'\value_based_S6a.mat']};
+filename_S6a = {[pathname_task3,'value_based_S6a.mat']};
 value_based_task(nSimu,varyPara,varyPara_num,filename_S6a);
 %% figure S6b
 disp('S6 b.');
 nSimu = 10;
 varyPara = 'network.noise_gain';
 varyPara_num = 0.5;
-filename_S6b = {[pathname_task3,'\value_based_S6b.mat']};
+filename_S6b = {[pathname_task3,'value_based_S6b.mat']};
 value_based_task(nSimu,varyPara,varyPara_num,filename_S6b);
 %% figure S6c
 disp('S6 c.');
 nSimu = 10;
 varyPara = 'modelPara.step';
 varyPara_num = 1;
-filename_S6c = {[pathname_task3,'\value_based_S6c.mat']};
+filename_S6c = {[pathname_task3,'value_based_S6c.mat']};
 value_based_task(nSimu,varyPara,varyPara_num,filename_S6c);
 
 %%  block; 2:A block; 3: AR block
