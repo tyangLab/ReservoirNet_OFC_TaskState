@@ -1,7 +1,7 @@
 # A neural network model for the orbitofrontal cortex and task space acquisition during reinforcement learning
 # Source code for the network model and the analyses.
 
-This repository provides the MATLAB code for the analyses in [Zhang et al.(2017)|https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005925&type=printable]
+This repository provides the MATLAB code for the analyses in <a href="https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005925&type=printable">Zhang et al.(2017)</a>
 
 ### Installation
 
@@ -20,7 +20,8 @@ Note: You should not need to edit any of the files for the code to work.
 This code has been tested on MATLAB R2019a.
 
 ### Running the code
-Execute main.m under the root directory.
+Execute <code>main.m</code> under the root directory.
+
 
 
 
