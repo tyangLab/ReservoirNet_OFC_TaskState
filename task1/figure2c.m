@@ -85,6 +85,6 @@ set(F,'visible','off');
 %%
 clearvars Max
 Max = Max_output;
-save([pathname,'\',fname,'_Max.mat'],'fname','Max');
+save([pathname,sep,fname,'_Max.mat'],'fname','Max');
 
 
