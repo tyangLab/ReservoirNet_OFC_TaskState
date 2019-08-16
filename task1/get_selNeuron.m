@@ -4,7 +4,7 @@ global AR A Rand target_file
 if exist([target_file(1:end-4),'_Max.mat'],'file')
     load([target_file(1:end-4),'_Max.mat']);
 else
-    [~,~,Max] = figure2c(target_file);
+    [~,Max] = figure2c(target_file);
 end
     
 AR = zeros(size([Max.AR]));

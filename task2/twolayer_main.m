@@ -1,9 +1,16 @@
 rng('shuffle');
 
 %% You need to set up the specific paths (pathname) for your machine
+if ismac | isunix
+    sep = '/';
+elseif ispc
+    sep = '\';
+else
+    disp('Platform not supported')
+end
+
 pathname_task2 = pwd;
 pathname_task2 = [pathname_task2, sep];
-
 
 %% data for figure 4abcefg
 disp('Simulation');

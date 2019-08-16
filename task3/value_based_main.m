@@ -1,6 +1,14 @@
 rng('shuffle');
 
 %% 
+if ismac | isunix
+    sep = '/';
+elseif ispc
+    sep = '\';
+else
+    disp('Platform not supported')
+end
+
 pathname_task3 = pwd;
 pathname_task3 = [pathname_task3, sep];
 

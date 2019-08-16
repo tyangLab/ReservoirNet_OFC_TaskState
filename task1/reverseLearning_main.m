@@ -1,6 +1,13 @@
 rng('shuffle');
 
 %% You need to set up the specific paths (pathname) for your machine
+if ismac | isunix
+    sep = '/';
+elseif ispc
+    sep = '\';
+else
+    disp('Platform not supported')
+end
 
 pathname_task1 = pwd;
 pathname_task1 = [pathname_task1, sep];

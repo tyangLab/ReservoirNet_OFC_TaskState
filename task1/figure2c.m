@@ -5,6 +5,15 @@ data = result_list;
 clear result_list
 [pathname,fname,~] = fileparts(filename);
 
+global sep;
+if ismac | isunix
+    sep = '/';
+elseif ispc
+    sep = '\';
+else
+    disp('Platform not supported')
+end
+
 numSessions = size(data,2);
 numTrials = data{1,1}.modelPara.numTrials;
 nNeurons = data{1,1}.network.nNeurons_rec;
